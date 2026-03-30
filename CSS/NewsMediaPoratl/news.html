@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best News Portal Development</title>
+    <link rel="shortcut icon" href="./Assets/10027.jpg" type="image/x-icon">
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            background-color: #0B163F;
+            padding-bottom: 10px;
+        }
+
+        #navbar{
+            display: flex;
+            padding-bottom: 20px;
+        }
+
+        #logo{
+            height: 28px;
+            margin-top: 13px;
+            margin-left: 28px;
+        }
+        #navbtns{
+            display: flex;
+            list-style: none;
+            margin-top: 5px;
+            margin-left: 300px;
+            gap: 10px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .navitems{
+            border: 1px solid #fff;
+            border-radius: 10px;
+            padding:10px 5px;
+        }
+        .paynowbtn{
+            border: 2px solid #fff;
+            border-radius: 30px;
+            padding: 5px 5px;
+            margin-left: 100px;
+            margin-top: 5px;
+            color: #fff;
+            background-color: #0A059B;
+        }
+        .epaperbtn{
+            margin-top: 5px;
+            margin-left: 10px;
+            width: 80px;
+            color: #fff;
+            background-color: #175CFF;
+            border-radius: 5px;
+            border-color: yellow;
+        }
+        .headerMain{
+            width: 100%;
+            height: 500px;
+            /* border: 2px dotted red; */
+            display: flex;
+            
+            
+        }
+        .textleft{
+            height: 400px;
+            width: 600px;
+            /* border: 2px solid #fff; */
+            margin-left: 100px;
+            margin-top: 9%;
+
+         
+        }
+        .imgright{
+            height: 300px;
+            width: 550px;
+            /* border: 2px solid #fff; */
+            margin-left: 2%;
+            margin-top: 11%;
+            align-content: end;
+
+        }
+        .deviceimg{
+            height: 100%;
+            width: 100%;
+        }
+        .callnow{
+            font-family: sans-serif, Arial, Helvetica;
+            color: #fff;
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+        }
+        .heading1{
+            color: yellow;
+            font-size: 46px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: -2px;
+            margin-bottom: 10px;
+        }
+        .tagline{
+           color: #fff;
+           font-family: sans-serif;
+           margin-bottom: 60px;
+        }
+        .viewdemobtn{
+            width: 180px;
+            height: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blue;
+            border-radius: 10px;
+            border: 0px ;
+            color: #fff;
+        }
+        .videodemobtn{
+            
+            width: 180px;
+            height: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 25px;
+            border-radius: 10px;
+            border :2px solid grey;
+            background-color: #0B163F;
+            color: #fff;
+        }
+
+        .bottomtagline{
+            width: 96%;
+            height: 50px;
+            margin-left: 2%;
+            border-radius: 20px;
+            background-color: #012A7C;
+            /* padding-left:200px ; */
+            padding-top:10px ;
+        }
+        .bottomtaglinetext{
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 200px;
+
+        }
+        .getstartedbtn{
+            height: 35px;
+            width: 120px;
+            border-radius: 12px;
+            background-color: #A70808;
+            color: yellow;
+            border: none;
+        }
+        .section1{
+            width: 100%;
+            height: 100px;
+            background-color: #C5C5C5;
+            font-weight: bold;
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .designoptions1{
+            height: 60px;
+            width: 20%;
+               border: 1px solid #fff; 
+               border-radius: 8px;
+               margin-left: 5%;
+               margin-top: 15px;
+               background-color: #A50B0B;
+               color: #fff;
+              
+        }
+        .designoptions{
+                           height: 60px;
+            width: 20%;
+               border: 1px solid #fff; 
+               border-radius: 8px;
+               margin-left:3% ;
+                margin-top: 15px;
+                background-color: #A50B0B;
+                color: yellow;
+               
+        }
+
+        .pindesignoptions{
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header >
+        <nav id="navbar">
+            <img id="logo" src="./Assets/10022.webp" alt="logo">
+            <ul id="navbtns">
+                <li class="navitems">Home</li>
+                <li class="navitems">About</li>
+                <li class="navitems">Services</li>
+                <li class="navitems">Demo</li>
+                <li class="navitems">Video/Design</li>
+                <li class="navitems">Shop</li>
+                <li class="navitems">Blog</li>
+                <li class="navitems">Contact</li>
+            </ul>
+            <button class="paynowbtn">Pay Now</button>
+            <button class="epaperbtn">E-paper</button>
+        </nav>
+        <hr>
+        <div class="headerMain">
+            <div class="textleft">
+                <h2 class="callnow">CALL NOW : +916262454525</h2>
+                <h1 class="heading1">Innovatine Solutions for <br> News Portals</h1>
+                <p class="tagline">Are you a journalist? Build your own news portal with our expert web <br>
+                     design services today!</p>
+                <button class="viewdemobtn">View DEMO</button>  
+                <button class="videodemobtn">Video DEMO</button>   
+            </div>
+            <div class="imgright">
+                <img class="deviceimg" src="./Assets/10002.webp" alt="deviceimages">
+            </div>
+        </div>
+        <div class="bottomtagline">
+            <span class="bottomtaglinetext">We provide professional<strong> E-Paper Website Design & CMS solutions</strong> to digitize your business.</span>
+            <button class="getstartedbtn"><b>Get Started →</b></button>
+        </div>
+
+    </header>
+    <hr style="border-color: #7B3F00; border-width: 3px;">
+    <section class="section1">
+       
+
+ 
+
+ 
+
+
+        <div class="designoptions1">
+            <p class="pindesignoptions">
+                 न्यूज पोर्टल डिजाइन <br>
+                 News Portal Website Design 
+            </p>
+        </div>
+        <div class="designoptions">
+            <p class="pindesignoptions">
+                मोबाईल एप डिजाइन<br>
+                News Portal Mobile App
+            </p>
+        </div>
+        <div class="designoptions1">
+            <p class="pindesignoptions">
+                बना हुआ पोर्टल डिजाइन <br>
+                News Portal Re-Design
+            </p>
+        </div>
+        <div class="designoptions">
+            <p class="pindesignoptions">
+                अपने अनुसार पोर्टल डिजाइन <br>
+                Custom News Portal Design
+            </p>  
+        </div>
+    </section>
+
+</body>
+
+</html>
