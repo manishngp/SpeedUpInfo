@@ -7,28 +7,28 @@
     <title>Best News Portal Development</title>
     <link rel="shortcut icon" href="./Assets/10027.jpg" type="image/x-icon">
     <style>
-
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
 
-        header{
+        header {
             background-color: #0B163F;
             padding-bottom: 10px;
         }
 
-        #navbar{
+        #navbar {
             display: flex;
             padding-bottom: 20px;
         }
 
-        #logo{
+        #logo {
             height: 28px;
             margin-top: 13px;
             margin-left: 28px;
         }
-        #navbtns{
+
+        #navbtns {
             display: flex;
             list-style: none;
             margin-top: 5px;
@@ -37,12 +37,14 @@
             color: white;
             font-family: Arial, Helvetica, sans-serif;
         }
-        .navitems{
+
+        .navitems {
             border: 1px solid #fff;
             border-radius: 10px;
-            padding:10px 5px;
+            padding: 10px 5px;
         }
-        .paynowbtn{
+
+        .paynowbtn {
             border: 2px solid #fff;
             border-radius: 30px;
             padding: 5px 5px;
@@ -51,7 +53,8 @@
             color: #fff;
             background-color: #0A059B;
         }
-        .epaperbtn{
+
+        .epaperbtn {
             margin-top: 5px;
             margin-left: 10px;
             width: 80px;
@@ -60,24 +63,27 @@
             border-radius: 5px;
             border-color: yellow;
         }
-        .headerMain{
+
+        .headerMain {
             width: 100%;
             height: 500px;
             /* border: 2px dotted red; */
             display: flex;
-            
-            
+
+
         }
-        .textleft{
+
+        .textleft {
             height: 400px;
             width: 600px;
             /* border: 2px solid #fff; */
             margin-left: 100px;
             margin-top: 9%;
 
-         
+
         }
-        .imgright{
+
+        .imgright {
             height: 300px;
             width: 550px;
             /* border: 2px solid #fff; */
@@ -86,65 +92,75 @@
             align-content: end;
 
         }
-        .deviceimg{
+
+        .deviceimg {
             height: 100%;
             width: 100%;
         }
-        .callnow{
+
+        .callnow {
             font-family: sans-serif, Arial, Helvetica;
             color: #fff;
             letter-spacing: 5px;
             margin-bottom: 10px;
         }
-        .heading1{
+
+        .heading1 {
             color: yellow;
             font-size: 46px;
             font-family: Arial, Helvetica, sans-serif;
             letter-spacing: -2px;
             margin-bottom: 10px;
         }
-        .tagline{
-           color: #fff;
-           font-family: sans-serif;
-           margin-bottom: 60px;
+
+        .tagline {
+            color: #fff;
+            font-family: sans-serif;
+            margin-bottom: 60px;
         }
-        .viewdemobtn{
+
+        .viewdemobtn {
             width: 180px;
             height: 60px;
             font-family: Arial, Helvetica, sans-serif;
             background-color: blue;
             border-radius: 10px;
-            border: 0px ;
+            border: 0px;
             color: #fff;
         }
-        .videodemobtn{
-            
+
+        .videodemobtn {
+
             width: 180px;
             height: 60px;
             font-family: Arial, Helvetica, sans-serif;
             margin-left: 25px;
             border-radius: 10px;
-            border :2px solid grey;
+            border: 2px solid grey;
             background-color: #0B163F;
             color: #fff;
         }
 
-        .bottomtagline{
+        .bottomtagline {
             width: 96%;
             height: 50px;
             margin-left: 2%;
             border-radius: 20px;
             background-color: #012A7C;
             /* padding-left:200px ; */
-            padding-top:10px ;
+            padding-top: 10px;
+            border-bottom: 5px solid yellow;
         }
-        .bottomtaglinetext{
+
+        .bottomtaglinetext {
             color: #fff;
             font-family: Arial, Helvetica, sans-serif;
             margin-left: 200px;
 
+
         }
-        .getstartedbtn{
+
+        .getstartedbtn {
             height: 35px;
             width: 120px;
             border-radius: 12px;
@@ -152,7 +168,8 @@
             color: yellow;
             border: none;
         }
-        .section1{
+
+        .section1 {
             width: 100%;
             height: 100px;
             background-color: #C5C5C5;
@@ -161,39 +178,222 @@
             font-family: Arial, Helvetica, sans-serif;
 
         }
-        .designoptions1{
+
+        .designoptions1 {
             height: 60px;
             width: 20%;
-               border: 1px solid #fff; 
-               border-radius: 8px;
-               margin-left: 5%;
-               margin-top: 15px;
-               background-color: #A50B0B;
-               color: #fff;
-              
-        }
-        .designoptions{
-                           height: 60px;
-            width: 20%;
-               border: 1px solid #fff; 
-               border-radius: 8px;
-               margin-left:3% ;
-                margin-top: 15px;
-                background-color: #A50B0B;
-                color: yellow;
-               
+            border: 1px solid #fff;
+            border-radius: 8px;
+            margin-left: 5%;
+            margin-top: 15px;
+            background-color: #A50B0B;
+            color: #fff;
+
         }
 
-        .pindesignoptions{
+        .designoptions {
+            height: 60px;
+            width: 20%;
+            border: 1px solid #fff;
+            border-radius: 8px;
+            margin-left: 3%;
+            margin-top: 15px;
+            background-color: #A50B0B;
+            color: yellow;
+
+        }
+
+        .pindesignoptions {
             margin-left: 30px;
             margin-top: 10px;
+
         }
 
+        /* section 02 css */
+        .section02 {
+            width: 100%;
+            height: 500px;
+            background-color: #EAF7FF;
+            padding-top: 5%;
+
+        }
+
+        .heading2 {
+            color: #A70808;
+            margin-left: 300px;
+            font-family: sans-serif;
+            margin-bottom: 20px;
+
+        }
+
+        .section02data {
+            margin-left: 30px;
+            width: 90%;
+            font-family: Arial, Helvetica, sans-serif;
+            /* border: 2px solid black; */
+            padding-left: 20px;
+        }
+
+        .section02datah3 {
+            margin: 0px 0px 30px 210px;
+            color: #0A059B;
+            /* border: 2px solid black; */
+        }
+
+        .section02ptag {
+            margin-bottom: 20px;
+        }
+
+        /* scdetin 03 starts here */
+        .section03 {
+            height: 550px;
+            width: 100%;
+            background-color: #FFEFEF;
+            margin-top: 20px;
+        }
+
+        .section0301 {
+            height: 400px;
+            width: 46%;
+            /* border: 2px solid black; */
+            float: left;
+            margin-top: 5%;
+            margin-left: 3%;
+
+        }
+
+        .section0302 {
+            height: 100%;
+            width: 49%;
+            /* border: 2px solid black; */
+            float: right;
+        }
+
+        .section0301div1 {
+            width: 100%;
+            height: 100px;
+            margin-top: 50px;
+            /* border: 2px solid black; */
+            /* display: flex; */
+        }
+
+        .section0301div2 {
+            width: 100%;
+            height: 100px;
+            margin-top: 20px;
+            /* border: 2px solid black; */
+            /* display: flex; */
+        }
+
+        .section04 {
+            width: 100%;
+            height: 800px;
+            background-color: #0B163F;
+        }
+
+        .section04listsdiv {
+            width: 88%;
+            height: 480px;
+            background-color: #fff;
+            border-radius: 20px;
+            margin-left: 80px;
+            margin-top: 50px;
+            padding: 15px 0px 15px 20px;
+
+        }
+
+        .section04lists {
+            width: 30%;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            list-style: none;
+            float: left;
+            margin-right: 12px;
+            font-family: sans-serif;
+            font-weight: bold;
+
+        }
+
+        .section04list {
+            /* background-color: green; */
+            padding: 8px 6px;
+            border-radius: 10px;
+            margin-bottom: 3px;
+        }
+
+        footer {
+            width: 100%;
+            height: 1000px;
+            background-color: #04008E;
+            /* padding-top: 50px;
+            padding-left: 50px; */
+        }
+
+        .footerdivs {
+            width: 22%;
+            height: 500px;
+            /* border: 2px solid yellow; */
+            float: left;
+            margin-top: 50px;
+            margin-left: 30px;
+            line-height: 25px;
+            word-spacing: 5px;
+            color: #fff;
+            font-family: sans-serif;
+            font-size: 13px;
+
+
+        }
+
+        .footerlastdiv{
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+            padding: 30px;
+        }
+        .section5{
+            height: 550px;
+            width: 100%;
+            background-color: #000;
+             padding-top: 60px;
+             /* padding-left: 120px; */
+             color: #fff;
+             font-family: sans-serif;
+             text-align: center;
+
+        }
+        .section5div1{
+            height: 350px;
+            width: 80%;
+           margin-bottom: 20px;
+           background-color: #F24358;
+           border-radius:10px  ;
+            margin-left: 120px;
+
+        }
+         .section5div2{
+            height: 100px;
+            width: 80%;
+             /* border: 2px solid white; */
+              margin-left: 120px;
+               border-radius: 5px;
+               background-color: #F24358;
+        }
+        .inputtag{
+            height: 50px;
+            width: 20%;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: none;
+            padding: 2px;
+            font-size:15px ;
+        }
     </style>
 </head>
 
 <body>
-    <header >
+    <header>
         <nav id="navbar">
             <img id="logo" src="./Assets/10022.webp" alt="logo">
             <ul id="navbtns">
@@ -215,33 +415,28 @@
                 <h2 class="callnow">CALL NOW : +916262454525</h2>
                 <h1 class="heading1">Innovatine Solutions for <br> News Portals</h1>
                 <p class="tagline">Are you a journalist? Build your own news portal with our expert web <br>
-                     design services today!</p>
-                <button class="viewdemobtn">View DEMO</button>  
-                <button class="videodemobtn">Video DEMO</button>   
+                    design services today!</p>
+                <button class="viewdemobtn">View DEMO</button>
+                <button class="videodemobtn">Video DEMO</button>
             </div>
             <div class="imgright">
                 <img class="deviceimg" src="./Assets/10002.webp" alt="deviceimages">
             </div>
         </div>
         <div class="bottomtagline">
-            <span class="bottomtaglinetext">We provide professional<strong> E-Paper Website Design & CMS solutions</strong> to digitize your business.</span>
+            <span class="bottomtaglinetext">We provide professional<strong> E-Paper Website Design & CMS
+                    solutions</strong> to digitize your business.</span>
             <button class="getstartedbtn"><b>Get Started →</b></button>
         </div>
 
     </header>
     <hr style="border-color: #7B3F00; border-width: 3px;">
     <section class="section1">
-       
-
- 
-
- 
-
 
         <div class="designoptions1">
             <p class="pindesignoptions">
-                 न्यूज पोर्टल डिजाइन <br>
-                 News Portal Website Design 
+                न्यूज पोर्टल डिजाइन <br>
+                News Portal Website Design
             </p>
         </div>
         <div class="designoptions">
@@ -260,9 +455,275 @@
             <p class="pindesignoptions">
                 अपने अनुसार पोर्टल डिजाइन <br>
                 Custom News Portal Design
-            </p>  
+            </p>
         </div>
     </section>
+
+    <!-- section -- 02 -->
+    <section class="section02">
+        <h1 class="heading2">Build Your News Portal, Share Your Voice</h1>
+        <div class="section02data">
+
+            <h3 class="section02datah3">Why News Media Portal is the Best News Portal Development Company in India</h3>
+            <p class="section02ptag"><span style="color: #0B163F; font-weight:bold ;">News Media Portal</span> is
+                India`s most affordable <strong style="color: #0B163F;"> News Portal Development Company</strong>,
+                offering customized solutions for the dynamic needs of digital news platforms.</p>
+            <p class="section02ptag">Specializing in creating visually appealing and highly functional news portals, we
+                ensure that our clients receive a complete solution, including SEO-friendly designs, user-friendly
+                interfaces, multimedia integration, and real-time updates.</p>
+            <p class="section02ptag">Specializing in creating visually appealing and highly functional news portals, we
+                ensure that our clients receive a complete solution, including SEO-friendly designs, user-friendly
+                interfaces, multimedia integration, and real-time updates.</p>
+            <p class="section02ptag">Whether you're starting a new project or upgrading an existing news portal, News
+                Media Portal delivers top-notch quality without compromising affordability. With over 5 years of
+                experience, we’ve earned a reputation for excellent customer feedback, fast technical support, and
+                exceptional service quality.</p>
+            <p class="section02ptag">Additionally, we support MSME registration for journalists, offering comprehensive
+                services to enhance your online news presence across India.</p>
+            <button
+                style="padding: 15px 20px; margin-left: 330px; font-size: 20px ; border: none; border-radius: 5px; font-weight: bold; background-color: #b80a0a; color: #fff;">Click
+                Here To Open Breaking News Photo Maker</button>
+
+        </div>
+    </section>
+    <!-- section 3 -->
+    <section class="section03">
+        <div class="section0301">
+
+
+            <p style="font-family:  Arial, Helvetica, sans-serif; color: #175CFF; font-weight: bold;">News Website
+                Design</p>
+            <h1
+                style="font-size: 40px; font-family: Arial, Helvetica, sans-serif; color: #b80a0a; padding-bottom: 20px;">
+                Powerful Solutions for Your <br> News Portal website</h1>
+            <p style="font-family: sans-serif;">We design tailored news portals that give journalists complete control
+                over their content. With our advanced web solutions</p>
+            <div class="section0301div1">
+                <img style="float: left; border-radius: 10px; width: 55px;" src="./Assets/image1.png" alt="">
+                <div style="float: left; margin-left: 20px;">
+                    <h3 style="color: #012A7C; font-family: sans-serif; ">Custom News Portal Design</h3>
+                    <p style="font-family: sans-serif; padding-top: 10px;">Get a personalized, responsive, and modern
+                        news portal <br>
+                        design tailored to your specific needs</p>
+                </div>
+            </div>
+            <div class="section0301div2">
+                <img style="float: left; border-radius: 10px; width: 55px;" src="./Assets/image.png" alt="">
+                <div style="float: left; margin-left: 20px; ">
+                    <h3 style="color: #012A7C; font-family: sans-serif; ">SEO and Analytics for News Portal</h3>
+                    <p style="font-family: sans-serif; padding-top: 10px;">Boost your portal's visibility with our SEO
+                        strategies and <br>
+                        track performance with integrated analytics</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section0302">
+            <img style=" width: 80%; margin: 10% 0% 0% 10% ; border-radius: 10px;" src="./Assets/10003.webp"
+                alt="mobile img orange">
+        </div>
+
+    </section>
+
+    <!-- section 04 -->
+    <section class="section04">
+        <div style="width: 100%;">
+            <h1 style="margin-left: 330px; padding-top: 50px; color: #fff; font-family: sans-serif;">Features for Your
+                News Portal Development</h1>
+            <h3 style="margin-left: 160px; padding-top: 25px; color: #fff; font-family: sans-serif;">Here’s a more
+                polished and organized version of the features you will provide in your News Portal Development:</h3>
+        </div>
+        <div class="section04listsdiv">
+            <ul class="section04lists">
+                <li class="section04list" style="background-color: #d2cdfc;">Ultra Responsive Layout (अल्ट्रा
+                    रिस्पॉन्सिव लेआउट)</li>
+                <li class="section04list" style="background-color: #F9CB9C;">Separate Hosting (अलग होस्टिंग)</li>
+                <li class="section04list" style="background-color: #F4CCCC;">SSL Certificate (SSL प्रमाणपत्र)</li>
+                <li class="section04list" style="background-color: #FBE4D5;">Multiple Author Signup (एकाधिक लेखक साइनअप)
+                </li>
+                <li class="section04list" style="background-color: #D9EAD3;">Reporter Verification Panel (पत्रकार
+                    सत्यापन पैनल)</li>
+                <li class="section04list" style="background-color: #cdf4fc;">Auto Social Media Sharing (स्वचालित सोशल
+                    मीडिया शेयरिंग)</li>
+                <li class="section04list" style="background-color: #cdfce2;">Maximum Ads Space (अधिकतम विज्ञापन स्थान)
+                </li>
+                <li class="section04list" style="background-color: #fccdf6;">Google Analytics Setup (गूगल एनालिटिक्स
+                    सेटअप)</li>
+            </ul>
+            <ul class="section04lists">
+                <li class="section04list" style="background-color: #fccdd5;">Ultra Responsive Layout (अल्ट्रा
+                    रिस्पॉन्सिव लेआउट)</li>
+                <li class="section04list" style="background-color: #cdcdfc;">Separate Hosting (अलग होस्टिंग)</li>
+                <li class="section04list" style="background-color: #FCE5CD;">SSL Certificate (SSL प्रमाणपत्र)</li>
+                <li class="section04list" style="background-color: #e0fccd;">Multiple Author Signup (एकाधिक लेखक साइनअप)
+                </li>
+                <li class="section04list" style="background-color: #cdf6fc;">Reporter Verification Panel (पत्रकार
+                    सत्यापन पैनल)</li>
+                <li class="section04list" style="background-color: #effccd;">Auto Social Media Sharing (स्वचालित सोशल
+                    मीडिया शेयरिंग)</li>
+                <li class="section04list" style="background-color: #cdd8fc;">Maximum Ads Space (अधिकतम विज्ञापन स्थान)
+                </li>
+                <li class="section04list" style="background-color: #cdfcf1;">Google Analytics Setup (गूगल एनालिटिक्स
+                    सेटअप)</li>
+            </ul>
+            <ul class="section04lists">
+                <li class="section04list" style="background-color: #cdfcd4;">Ultra Responsive Layout (अल्ट्रा
+                    रिस्पॉन्सिव लेआउट)</li>
+                <li class="section04list" style="background-color: #cdf8fc;">Separate Hosting (अलग होस्टिंग)</li>
+                <li class="section04list" style="background-color: #f6fccd;">SSL Certificate (SSL प्रमाणपत्र)</li>
+                <li class="section04list" style="background-color: #cdfcd4;">Multiple Author Signup (एकाधिक लेखक साइनअप)
+                </li>
+                <li class="section04list" style="background-color: #f8cdfc;">Reporter Verification Panel (पत्रकार
+                    सत्यापन पैनल)</li>
+                <li class="section04list" style="background-color: #d3cdfc;">Auto Social Media Sharing (स्वचालित सोशल
+                    मीडिया शेयरिंग)</li>
+                <li class="section04list" style="background-color: #FCE5CD;">Maximum Ads Space (अधिकतम विज्ञापन स्थान)
+                </li>
+                <li class="section04list" style="background-color: #cefccd;">Google Analytics Setup (गूगल एनालिटिक्स
+                    सेटअप)</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+
+              <!-- section 5 -->
+         <section class="section5">
+            <div class="section5div1">
+             <div style="width: 50%;  float: left; margin-top: 100px;">  <h1 style="font-size: 50px;">Don’t wait!</h1>
+                <p style="margin-top: 30px; line-height: 30px;">Build your news portal now with our professional design  <br> services and expand your reach to a global audience. Contact <br>
+                    us today to get started</p>
+            </div>
+             <div  style="width: 40%; float: left; margin-top:180px;">
+                <img style="width: 50px; height: 50px; float: left;" src="Assets/call1.png" alt=" call">
+                 <div style="float: left; margin-left: 20px;">
+                     <p style="font-size: 20px;" >Call Now</p>
+                     <h2>+91 6262454525</h1>
+                 </div>
+                <button style="float: right;  color: blue; padding: 20px; border-radius: 5px; border: none; ">Send Message</button>
+
+             </div>
+            </div>
+            <div class="section5div2">
+                <input class="inputtag" type="text" placeholder="Name">
+                <input class="inputtag" type="text" placeholder="Email">
+                <input  class="inputtag" type="text" placeholder="Mobile Number">  
+                <select  style="width: 20%; height: 50px; border: 2px dotted black; border-radius: 10px; " name="" id="">
+                    <option value=""> Select Query For</option>
+                     <option value=""></option>
+                      <option value=""></option>
+                       <option value=""></option>
+                        <option value=""></option>
+                         <option value=""></option>
+                </select>
+                <button style=" padding: 10px;  background-color: #000; color: #fff; border-radius: 25px; width: 120px;">Submit</button>
+            </div>
+           
+         </section>
+      
+
+
+
+    <!-- footer  -->
+    <footer>
+        <div style="width: 100%; height: 500px;">
+              <div class="footerdivs">
+            <img style="width: 130px;" src="./Assets/10001.webp" alt="">
+            <p style="margin-top: 30px; font-family: sans-serif; font-size: 20px; color: #fff;">News Media Portal is a
+                top news portal development company in India, specializing in custom, SEO-friendly websites.
+                With over 5 years of experience, we help journalists and media outlets build strong online presences
+                with responsive
+                design and real-time updates.</p>
+            <h3 style="color: yellow; font-family: sans-serif; margin-top: 50px; ">Contact at: +91 6262454525</h3>
+        </div>
+        <div class="footerdivs">
+            <p>#PRESSIDCARD | #प्रेसकार्डआईडीकार्ड | Best news portal development company in India | Breaking News photo
+                Maker | How
+                To Register Online News web Portal Channel In India | How to start a News Web Portal in India | How to
+                Start a News
+                Website │ How can i start a news channel online? | News Portal Design In India │News Portal Development
+                Company │
+                News Portal Registration | News Portal Development | News Portal Website Design company न्यूज़ पोर्टल
+                बनाने की
+                विधि,न्यूज चैनल रजिस्ट्रेशन | Digital Web News Portal Registration | भारत में सर्वश्रेष्ठ न्यूज पोर्टल
+                वेबसाईट
+                डेवलपमेंट कंपनी- 2025</p>
+        </div>
+        <div class="footerdivs">
+            News Portal Registration in India | News Portal website Design Development Company in india | News web
+            Portal Registration in India | News Portal website kaise banaye | RNI रजिस्ट्रेशन कैसे करें, News Portal
+            Registration कैसे करे, न्यूज़ पोर्टल का रजिस्ट्रेशन कैसे करें? | न्यूज चैनल कैसे शुरू करें | हिंदी न्यूज़
+            पोर्टल रजिस्ट्रेशन | Best News Portal Website Design | न्यूज चैनल या न्यूज पोर्टल का RNI रजिस्ट्रेशन | RNI
+            Registration for online news portal or news channel | न्यूज पोर्टल कैसे बनाये | न्यूज पोर्टल बनवाने के फायदे
+            | वेब न्यूज पोर्टल रजिस्ट्रेशन कराने का तरीका | न्यूज़ पोर्टल क्या होता है | वेब न्यूज़ पोर्टल कैसे बनता है
+            | न्यूज पोर्टल कैसे शुरू करें |
+        </div>
+        <div class="footerdivs">
+            <p>न्यूज पोर्टल रजिस्ट्रेशन कैसे करें | न्यूज पोर्टल कैसे बनाये | न्यूज पोर्टल से कमाई | न्यूज़ पोर्टल बनाने का तरीका |
+                न्यूज पोर्टल कैसे बनाये | भारत की सर्वश्रेष्ठ न्यूज़ पोर्टल डेवलपमेंट कंपनी | न्यूज़ पोर्टल रजिस्ट्रेशन | न्यूज़
+                पोर्टल डिज़ाइन | भारत में न्यूज पोर्टल (न्यूज वेबसाईट) की कानूनन मान्यता | न्यूज पोर्टल रजिस्ट्रेशन | भारत में न्यूज
+                पोर्टल बनाने वाली कंपनी | India Best News Portal Design Company | भारतातील सर्वोत्तम न्यूज़ पोर्टल डेवलपमेंट कंपनी |
+                आम्ही न्यूज़ पोर्टल नोंदणी | न्यूज़ पोर्टल वेबसाइट कसे तयार करावे | समाचार न्यूज वेब पोर्टल रजिस्ट्रेशन इन इंडिया |
+                সমाचार ওয়েব নিউজ পোর্টাল তৈরি করার পদ্ধতি | हिन्दी न्यूज पोर्टल वेबसाईट कैसे सुरू करें | न्यूज पोर्टल बनवाने के
+                फायदे |</p>
+        </div>
+        </div>
+
+        <hr style="width: 90%; margin-left: 5%;">
+        <div style="color: aqua; font-family: sans-serif; font-weight: 400; margin-left: 20px; margin-right: 20px;  margin-bottom : 25px; ; padding-top: 10px;">
+            <p style="float: left;">© 2026 All rights reserved.</p>
+            <p style="float: right;">
+                <span style="margin-right: 10px;">Contact us</span>
+                <span style="margin-right: 10px;">Privacy policy</span>
+                <span style="margin-right: 10px;">Terms conditions</span>
+                <span>Refund and Return</span>
+            </p>
+        </div>
+        <hr color="yellow">
+
+    
+
+
+      <div class="footerlastdiv">
+        <h2>Best News Portal Design & Development</h2>
+        <p style="font-size: 10px; word-spacing: 2px; line-height: 17px; margin-top: 30px;">News Website Development| Online News Portal Design| Magazine Website Design| Journalism Website Design| Newspaper
+            Website Development| WordPress News Portal Theme| News Portal SEO| Custom News Portal Website Design| News Web
+            Portal Design Services| Newspaper Web Design| Online Magazine Website Design| Press Website Design| Marathi News
+            Portal Design| Breaking News Website Design| Premium News Website Design| Customizable News Portal Design| News
+            Website Solutions| Best News Portal Design in Goa| Best News Portal Design in Jaipur| Best News Portal Design in
+            Delhi| Best News Portal Design in Mumbai| Best News Portal Design in Udaipur| Best News Portal Design in Shimla|
+            Best News Portal Design in Nagpur| Best News Portal Design in Thane| Best News Portal Design in Nashik| Best News
+            Portal Design in Bhopal| Best News Portal Design in Indore| Best News Portal Design in Gwalior| Best News Portal
+            Design in Ujjain| Best News Portal Design in Guna| Best News Portal Design in Jabalpur| Best News Portal Design in
+            Nanded| Best News Portal Design in Solapur| Best News Portal Design in Ratlam| Best News Portal Design in Surat|
+            Best News Portal Design in Aurangabad| Best News Portal Design in Satara| Best News Portal Design in Gandhinagar|
+            Best News Portal Design in Vadodara| Best News Portal Design in Jodhpur| Best News Portal Design in Baroda| Best
+            News Portal Design in Sagar| Best News Portal Design in Betul| Best News Portal Design in Sehore| Best News Portal
+            Design in Morena| Best News Portal Design in Varanasi| Best News Portal Design in Chandigarh| Best News Portal
+            Design in Ahmedabad| Best News Portal Design in Pune| Best News Portal Design in Amritsar| Best News Portal Design
+            in Kolkata| Best News Portal Design in Dehradun| Best News Portal Design in Lucknow| Best News Portal Design
+            Development Company In Bihar| Best News Portal Website Development in India| Best News Web Portal Development
+            Company In Maharashtra| How to open online News portal| how to register a news agency in india| How To Start An
+            Online News Portal| how to start online news portal in india| online news web portal registration| news web portal
+            website design| Registration of News portal in india| web portal registration in india| How To Register Online News
+            Portal Channel In India| न्यूज चैनल रजिस्ट्रेशन न्यूज़ पोर्टल कैस शुरू करें| न्यूज पोर्टल की मान्यता news portal
+            website design wordpress, news portal website design bangla, news portal website design wordpress in hindi, news
+            portal website design in nepali, free news portal registration, msme news portal registration, news portal
+            registration process, responsive news portal design, news portal template, best news website design, news portal
+            layout, modern news portal design, news portal development, news website UI design, latest news website design, ,
+            समाचार वेब पोर्टल बनाने का तरीका, news website kaise banaye, Blogger par news website kaise banaye, WordPress par
+            news website kaise banaye, free me news website kaise banaye, news portal kaise shuru kare, news portal banane wali
+            company, news website banane ke liye kya chahiye, news website templates, diseño de portal de noticias, diseño de
+            sitio de noticias, plantillas portal de noticias, न्यूज़ पोर्टल बनाने की विधि: एक संपूर्ण गाइड, न्यूज़ वेबसाइट कैसे
+            बनाये?, India Mein News Portal Shuru Karne Ka Tarika, भारत में समाचार वेब पोर्टल कैसे शुरू करें</p>
+            <button style="background: #000; color: white; border: 1px solid rgb(255, 255, 255);
+            border-radius:5px; width: 50%; padding: 10px; margin-top: 20px;" >👁️ Total Page View: 4,365,061</button>
+      </div>
+       
+
+    </footer>
 
 </body>
 
