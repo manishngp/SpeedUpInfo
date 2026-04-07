@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning in html</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+        .circle{
+            height: 150px;
+            width:150px;
+            border: 5px solid;
+            border-radius: 50%;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+            text-align: center;
+            background-color: #fff;
+        }
+        .first{
+            border-color: lightgreen;
+            position: absolute;
+            top: 30px;
+            left: 510px;
+        }
+        .second{
+            border-color: rgb(147, 68, 220);
+            position: absolute;
+            left: 695px; 
+            top: 210px;
+            
+        }
+        .third{
+            border: solid 10px black;
+             border-color: lightgreen rgb(147, 68, 220)   rgb(0, 128, 255) aqua ;
+            width: 170px;
+            height: 170px;
+            position: absolute;
+            left: 500px ;
+            top: 200px;
+        
+        }
+        .fourth{
+            border-color: aqua;
+            position: absolute;
+            top: 210px ;
+            left: 325px;
+
+        }
+        .fifth{
+            border-color: rgb(0, 128, 255);
+            position: absolute;
+            top: 390px;
+            left: 510px;
+            
+        }
+        h1{
+            margin-top:15px;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+   
+        p{
+            margin: 0px 5px;
+            font-size: 7px;
+            color: rgb(152, 152, 152);
+        }
+        img{
+            width: 40px;
+        }
+        .first h1{
+            color: lightgreen;
+        }
+         .second h1{
+            color:  rgb(147, 68, 220);
+        }
+         .fourth h1{
+            color: aqua;
+        }
+         .fifth h1{
+            color: rgb(0, 128, 255);
+        }
+        .colorline{
+            border: 2px solid lightgreen;
+            width: 25px;
+           
+        }
+        .two{
+           border-color:  aqua;
+        }
+        .three{
+           border-color: rgb(0, 128, 255) ;
+        }
+        .four{
+             border-color: rgb(147, 68, 220);
+        }
+    </style>
+</head>
+<body>
+    <main style="background-color: #e0f1f9; height: 100vh; width: 100%;">
+    <div class="circle first" ><h1> STRATEGY</h1>
+        <img src="./assets/image.png" alt="globe logo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, non maxime? Blanditiis laboriosam ipsa, resdadscc
+            nulla minima fuga rerum facilis voluptatibus.</p>
+    </div>
+    <div class="circle second"><h1> ANALYSIS</h1>
+         <img src="./assets/icons8-growth-50.png" alt="globe logo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, non maxime? Blanditiis laboriosam ipsa, resdadscc
+            nulla minima fuga rerum facilis voluptatibus.</p>
+    </div>
+    <div class="circle third"> <img style="margin-top: 20px;" src="./assets/icons8-stairs-up-48.png" alt="">
+        <div style="display: flex; margin-left: 25px; margin-top: 10px;">
+             <div class="colorline"></div>
+          <div class="colorline two"></div>
+           <div class="colorline three"></div>
+            <div class="colorline four"></div>
+        </div>
+        <h1 style="margin-top: 5px; font-size: 19px; color: rgb(73, 73, 73); letter-spacing: 1px; margin-bottom: 0px; padding: 0px;">ELEMENTS</h1>
+       <span style="color: grey; font-size: 19px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin: 0px; padding: 0px;">INFOGRAFIC</apan>
+    </div>
+    <div class="circle fourth"><h1>MESSAGES</h1>
+         <img src="./assets/icons8-aim-50.png" alt="globe logo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, non maxime? Blanditiis laboriosam ipsa, resdadscc
+            nulla minima fuga rerum facilis voluptatibus.</p>
+    </div>
+    <div class="circle fifth"> <h1>SOLUTIONS</h1>
+         <img src="./assets/icons8-envelope-24.png" alt="globe logo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, non maxime? Blanditiis laboriosam ipsa, resdadscc
+            nulla minima fuga rerum facilis voluptatibus.</p>
+    </div>
+    </main>
+</body>
+</html>
