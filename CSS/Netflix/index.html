@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India - Watch Shows Onlie, Watch movies Online</title>
+    <link rel="shortcut icon" href="./Assets/10022.ico" type="image/x-icon">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+            font-family: Helvetica, 'Segoe UI', sans-serif;
+            /* border: 1px solid green; */
+        }
+
+        .heroSection {
+            /* width: 100vw; */
+            width: 100%;
+            height: 100vh;
+            background-image: url('./Assets/10005.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Courier New', Courier, monospace, sans-serif;
+
+            /* background-position-y: 50px; */
+        }
+
+        .hero1 {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.692);
+        }
+
+        .navbar {
+            width: 100%;
+            height: 15vh;
+            /* background-color: aqua; */
+        }
+
+        .langselect {
+            background: none;
+            color: white;
+            font-weight: 600;
+            margin-right: 10px;
+
+            border-radius: 5px;
+            border: 1px solid white;
+            padding: 9px;
+
+        }
+
+        .langoptions {
+            color: black;
+        }
+
+        .headingandetc {
+            color: white;
+            height: 60vh;
+            width: 100%;
+            /* background: grey; */
+            margin-top: 90px;
+            text-align: center;
+        }
+
+        .heading {
+            font-size: 3.2em;
+            font-weight: 800;
+        }
+
+        .priceheading {
+            font-size: 1.2em;
+            padding: 15px 0px;
+        }
+
+        p {
+            margin: 10px 0px 15px 0px;
+        }
+
+        input {
+            width: 400px;
+            height: 60px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid white;
+            border-radius: 3px;
+            vertical-align: middle;
+            background: none;
+        }
+
+        .getstartedbtn {
+            width: 200px;
+            height: 60px;
+            /* padding-top: 10px; */
+            vertical-align: middle;
+            font-size: 1.3em;
+            border-radius: 3px;
+            border: none;
+            color: white;
+            font-family: sans-serif;
+            font-weight: 700;
+            background-color: red;
+            text-align: center;
+            margin-left: 15px;
+        }
+        .trendingnow{
+            width: 100%;
+            height: 470px; 
+            /* border: 2px solid black;  */
+            background-color: black;
+            padding: 3% 13%;
+
+        }
+        .trendingshows{
+            /* background-color: blue; */
+            height: 350px;
+            width: 100%;
+        }
+        .imagesdiv{
+             padding-left: 10px;
+        }
+        .moviesimg{
+            float: left;
+            margin: 16px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="heroSection">
+        <div class="hero1">
+            <nav class="navbar">
+                <img style="height: 80px; padding-left: 150px;" src="./Assets/10006.png" alt="logo">
+
+                <div style="float: right; margin-top:20px ; margin-right: 150px;">
+                    <select class="langselect" name="" id="">
+                        <option value="">文 English</option>
+                        <option class="langoptions" value="">English</option>
+                        <option class="langoptions" value="">Hindi</option>
+                    </select>
+                    <button
+                        style="color: white; font-weight: 600; border: none; border-radius: 5px; background-color: red; font-family: sans-serif ; padding: 10px 15px;">Sign
+                        In</button>
+
+                </div>
+            </nav>
+
+            <div class="headingandetc">
+                <h1 class="heading">Unlimited movies, <br> shows, and more</h1>
+                <h4 class="priceheading">Starts at ₹149. Cancel at any time.</h4>
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                <div>
+                    <input type="email" placeholder="Email address">
+                    <button class="getstartedbtn">Get Started </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="trendingnow">
+        <div class="trendingshows">
+            <h2 style="color: white;">Treanding Now</h2>
+            <div class="imagesdiv">
+                <div class="moviesimg">
+                    <img  src="./Assets/10008.webp" alt="">
+                </div>
+                 <div class="moviesimg">
+                     <img src="./Assets/10009.webp" alt="">
+                 </div>
+                  <div class="moviesimg">
+                     <img src="./Assets/10015.webp" alt="">
+                  </div>
+                   <div class="moviesimg">
+                     <img src="./Assets/10011.webp" alt="">
+                     
+                   </div>
+            </div>
+            
+        </div>
+
+    </div>
+ 
+</body>
+
+</html>
