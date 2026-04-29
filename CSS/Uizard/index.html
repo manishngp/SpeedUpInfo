@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lando -Startup Landing page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins";
+        }
+
+        main {
+            width: 100%;
+            height: 500vh;
+            /* height: auto; */
+            padding: 0px 100px;
+            overflow: hidden;
+            background-color: #EDEDED;
+
+        }
+
+        nav {
+            height: 10vh;
+            width: 100%;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+
+
+
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .logo {
+            margin-right: 50px;
+
+        }
+
+        .loginsignuppbtn {
+            margin-left: 450px;
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .lgn_btn {
+            color: black;
+            background: none;
+            border: none;
+
+        }
+
+        .signupbtn {
+            border: none;
+            border-radius: 10px;
+            background-color: #3164F4;
+            color: #ffffff;
+            padding: 5px 10px;
+        }
+
+        .hero_sec {
+            /* background-color: blueviolet; */
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 100px;
+            justify-content: center;
+
+
+        }
+
+        .hero_sec>div {
+            width: 50%;
+            height: 70vh;
+            /* background-color: aquamarine; */
+            /* border: 2px solid black; */
+
+
+        }
+
+        .freetrail_line {
+            font-size: 0.8em;
+            color: gray;
+            font-weight: 500;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+        }
+
+        .hero_sec01>h1 {
+            font-size: 3.8em;
+            line-height: 70px;
+
+        }
+
+        .toptudiscription_line {
+            margin: 35px 0;
+        }
+
+        .hero_sec01>button,
+        .trybtn , .sec3btn {
+            border-radius: 10px;
+            padding: 10px 20px;
+            border: 1px solid black;
+            font-weight: 500;
+            background: none;
+        }
+
+        .hero_sec01 :nth-last-child(2),
+        .trybtn {
+            border: none;
+            background-color: #3164F4;
+            color: #ffffff;
+            margin-right: 20px;
+        }
+
+        .section02 {
+            margin-top: 50px;
+            width: 100%;
+            height: 65vh;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 10px;
+            /* border-bottom: 20px solid black;
+             border-width: 80%; */
+            /* border: solid black; */
+        }
+
+        .section02>div {
+            width: 50%;
+            padding: 80px 50px;
+            /* border: 2px solid black; */
+        }
+
+        .section02 :nth-child(2) {
+            /* width: 60%; */
+
+        }
+
+        .div1sec2 img {
+            position: relative;
+            bottom: 100px;
+
+        }
+
+        footer {
+            margin-top: 50px;
+            display: flex;
+            gap: 100px;
+            border-top: 1px solid grey;
+            padding: 80px;
+        }
+
+        .section3{
+            display: flex;
+        }
+        .section3>div{
+            width: 50%;
+            margin-top: 150px;
+        }
+
+        footer>div>p {
+            margin: 15px 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+
+        <nav>
+            <h2 class="logo">Lando</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="loginsignuppbtn">
+                <button class="lgn_btn">Login</button>
+                <button class="signupbtn">Sign up</button>
+            </div>
+
+        </nav>
+
+        <section class="hero_sec">
+            <div class="hero_sec01">
+                <p class="freetrail_line">- FREE 30 DAYS TRIAL</p>
+                <h1>The best way
+                    <br> to showcase
+                    <br> your project.
+                </h1>
+                <p class="toptudiscription_line">Here you can put a short description about your project.</p>
+                <button>Try for free</button>
+                <button>See how it works</button>
+            </div>
+            <div>
+                <img style="position: relative; bottom: 150px;" width="110%" src="./Assets/10001.png"
+                    alt="hero section image">
+            </div>
+            <div>
+                <p style="text-align: center; font-size: 13px;">Trusted by Individuals and teams at the world's
+                    <br>
+                    best companies
+                </p>
+                <h2 style="text-align: center; word-spacing: 15px; color: rgb(161, 161, 161);">Logo Logo Logo Logo Logo
+                    Logo</h2>
+            </div>
+
+        </section>
+
+        <section class="section02">
+            <div class="div1sec2">
+                <h1 style="line-height: 40px;">Introducing <br> good solution</h1>
+                <p style="margin: 20px 0px;"> Join our community and Experience <br> the benefits today!</p>
+                <button class="trybtn"> Try for free</button>
+            </div>
+            <div div2sec2>
+                <img style="position: relative; right: 50px; bottom: 270px;" width="150%" src="./Assets/10004.png"
+                    alt="">
+            </div>
+
+        </section>
+
+
+        <section class="section3">
+            <div>
+                   <img style="position: relative; bottom: 110px;" width="100%" src="./Assets/10003.png" alt="3rd img">
+            </div>
+            <div >
+                <p class="freetrail_line">SMARTSAVE</p>
+                <h2 style="line-height: 30px; margin: 30px 0px;" >All your work is safe <br> with us</h2>
+                <p style="margin-bottom: 25px;">We take your data security seriously, which is  <br> why we use
+                    advance encryption protocals <br> to procet your files in the cloud, Your data is <br> safe and secure with
+                    us.
+                </p>
+                <button class="sec3btn">Try now</button>
+            </div>
+        </section>
+
+        
+        <section class="section02">
+            <div class="div1sec2">
+                <h1 style="line-height: 40px;">Get started with <br> lando today</h1>
+                <p style="margin: 20px 0px;"> Start optimising your process today.</p>
+                <button class="trybtn"> Sign up Now</button>
+            </div>
+            <div div2sec2>
+                <img style="position: relative; right: 50px; bottom: 170px;" width="122%" src="./Assets/10003.png"
+                    alt="">
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            <div>
+                <h2>Lando</h2>
+                <p>2021 @ Lando</p>
+                <p>All Rights Reserved.</p>
+            </div>
+            <div>
+                <p>Home</p>
+                <p>Pricing</p>
+                <p>About us</p>
+                <p>Contact </p>
+            </div>
+            <div>
+                <p>Fackbook</p>
+                <p>Instagram</p>
+                <p>Twitter</p>
+                <p>Linkedin </p>
+            </div>
+            <div>
+                <p>Privacy policy</p>
+                <p>terms of services</p>
+            </div>
+
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
