@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+
+     <div class="min-h-screen bg-[#f7f7fb] flex flex-col justify-between font-sans text-[#222]">
+      <!-- {/* HEADER */} -->
+      <header class="flex items-center justify-between px-8 py-5">
+        <div class="flex items-center gap-3">
+          <div class="text-4xl"></div>
+          <h1 class="text-2xl font-bold text-indigo-500">SearchEngine</h1>
+        </div>
+
+        <nav class="flex gap-12 text-sm font-medium text-gray-600">
+          <a href="#">Images</a>
+          <a href="#">Videos</a>
+          <a href="#">Shopping</a>
+          <a href="#">News</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <img
+            src="https://randomuser.me/api/portraits/women/44.jpg"
+            class="w-10 h-10 rounded-full object-cover"
+          />
+          <span class="text-sm font-medium">Sofia Perez</span>
+          <span class="text-gray-500"><i class="fa-solid fa-angle-down" style="color: rgb(204, 12, 247);"></i></span>
+        </div>
+      </header>
+
+      <main class="flex flex-col items-center">
+       
+        <div class="w-[400px] bg-white rounded-2xl shadow-sm px-5 py-3 flex items-center justify-between border border-gray-100">
+          <div class="flex items-center gap-3 text-gray-400 flex-1">
+            <span>🔍</span>
+            <input
+              type="text"
+              placeholder="Search everything"
+              class="outline-none bg-transparent w-full text-sm"
+            />
+          </div>
+
+          <div class="flex items-center gap-4 text-indigo-500 text-lg">
+            <span>🖼️</span>
+            <span>🎤</span>
+          </div>
+        </div>
+
+     
+        <div class="mt-24 flex flex-col items-center">
+          <h2 class="text-4xl font-bold mb-12 text-gray-800">
+            Today's trending searches
+          </h2>
+          
+          <div class="flex items-center justify-center gap-10 bg-[#fafafa] p-10">
+
+  <!-- LEFT ARROW -->
+  <button class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-gray-500 text-xl">
+    ←
+  </button>
+
+  <!-- GRID -->
+  <div class="grid grid-cols-3 gap-6">
+
+    <!-- CARD -->
+    <div class="w-[350px] h-[100px] bg-white border border-gray-100 rounded-2xl p-4 flex gap-4 hover:shadow-md transition">
+
+      <img
+        src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=500&auto=format&fit=crop"
+        class="w-20 h-20 rounded-xl object-cover"
+      >
+
+      <div class="flex flex-col justify-between">
+
+        <h3 class="text-[15px] font-semibold text-gray-800 leading-5">
+          Major Tech Breakthrough Announced
+        </h3>
+
+        <button class="w-fit px-3 py-1 bg-gray-100 rounded-full text-xs text-gray-600">
+          🔍 120K searches
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- CARD -->
+    <div class="w-[350px] h-[100px] bg-white border border-gray-100 rounded-2xl p-4 flex gap-4 hover:shadow-md transition">
+
+      <img
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=500&auto=format&fit=crop"
+        class="w-20 h-20 rounded-xl object-cover"
+      >
+
+      <div class="flex flex-col justify-between">
+
+        <h3 class="text-[15px] font-semibold text-gray-800 leading-5">
+          Environmental Progress 2025
+        </h3>
+
+        <button class="w-fit px-3 py-1 bg-gray-100 rounded-full text-xs text-gray-600">
+          🔍 110K searches
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- CARD -->
+    <div class="w-[350px] h-[100px] bg-white border border-gray-100 rounded-2xl p-4 flex gap-4 hover:shadow-md transition">
+
+      <img
+        src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=500&auto=format&fit=crop"
+        class="w-20 h-20 rounded-xl object-cover"
+      >
+
+      <div class="flex flex-col justify-between">
+
+        <h3 class="text-[15px] font-semibold text-gray-800 leading-5">
+          Morning Affirmations Mental Health
+        </h3>
+
+        <button class="w-fit px-3 py-1 bg-gray-100 rounded-full text-xs text-gray-600">
+          🔍 110K searches
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- CARD -->
+    <div class="w-[350px] h-[100px] bg-white border border-gray-100 rounded-2xl p-4 flex gap-4 hover:shadow-md transition">
+
+      <img
+        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=500&auto=format&fit=crop"
+        class="w-20 h-20 rounded-xl object-cover"
+      >
+
+      <div class="flex flex-col justify-between">
+
+        <h3 class="text-[15px] font-semibold text-gray-800 leading-5">
+          Best Spring Travel Destinations 2025
+        </h3>
+
+        <button class="w-fit px-3 py-1 bg-gray-100 rounded-full text-xs text-gray-600">
+          🔍 100K searches
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- CARD -->
+    <div class="w-[350px] h-[100px] bg-white border border-gray-100 rounded-2xl p-4 flex gap-4 hover:shadow-md transition">
+
+      <img
+        src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=500&auto=format&fit=crop"
+        class="w-20 h-20 rounded-xl object-cover"
+      >
+
+      <div class="flex flex-col justify-between">
+
+        <h3 class="text-[15px] font-semibold text-gray-800 leading-5">
+          Easy Home Workouts for Beginners
+        </h3>
+
+        <button class="w-fit px-3 py-1 bg-gray-100 rounded-full text-xs text-gray-600">
+          🔍 90K searches
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="w-[350px] h-[100px] bg-white border border-gray-100 rounded-2xl p-4 flex gap-4 hover:shadow-md transition">
+
+      <img
+        src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=500&auto=format&fit=crop"
+        class="w-20 h-20 rounded-xl object-cover"
+      >
+
+      <div class="flex flex-col justify-between">
+
+        <h3 class="text-[15px] font-semibold text-gray-800 leading-5">
+          Top Trending Fashion Styles This Season
+        </h3>
+
+        <button class="w-fit px-3 py-1 bg-gray-100 rounded-full text-xs text-gray-600">
+          🔍 80K searches
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+ 
+  <button class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-gray-500 text-xl">
+    →
+  </button>
+
+</div>
+
+          <div class="flex items-center gap-8">
+            <button class="w-12 h-12 rounded-full bg-white shadow flex items-center justify-center text-xl">
+              ←
+            </button>
+
+            <div class="grid grid-cols-3 gap-6">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</body>
+</html>
