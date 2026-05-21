@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            margin: 10px 20px;
+        }
+    
+    </style>
+</head>
+
+<body>
+
+    <button onclick="add(a, b)">addition</button> <br>
+    <button onclick="sub(a, b)"> substraction</button> <br>
+    <button onclick="multi(a, b)"> multiplication</button> <br>
+    <button onclick="div(a, b)">division</button>
+    <script>
+       let a;
+       let b;
+       function getData(){
+          a =+ prompt("enter number");
+          b =+ prompt("enter number");
+
+       }   
+
+        function add(a, b) {
+            getData();
+           
+            document.write(`adition is ${a + b}`)
+        }
+        function sub() {
+            let a = + prompt("enter number");
+            let b = + prompt("enter number");
+            document.write(`substraction  is ${a - b}`)
+        }
+        function multi() {
+            let a = + prompt("enter number");
+            let b = + prompt("enter number");
+            document.write(`multiplication  is ${a * b}`)
+        }
+        function div() {
+            let a = + prompt("enter number");
+            let b = + prompt("enter number");
+            document.write(`division is ${a / b}`)
+        }
+    </script>
+
+</body>
+
+</html>
