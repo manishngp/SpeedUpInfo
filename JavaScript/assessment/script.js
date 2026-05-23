@@ -162,16 +162,16 @@ else {
 
 var prime = numb => {
     if (numb <= 1) {
-        return false;
+        return "Prime Number";
     }
 
     for (let i = 2; i < numb; i++) {
         if (numb % i === 0) {
-            return false;
+            return "It is not prime Number";
         }
     }
 
-    return true;
+    return "Prime Number";
 }
 
 console.log(prime(17));
