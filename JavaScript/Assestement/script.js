@@ -11,7 +11,7 @@
 
 
 // 3. What is called when we pass values into a function?
-// a) Parameters
+// argument
 
 // 4. Which function type has no name?
 // c) Anonymous Function
