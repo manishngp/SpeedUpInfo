@@ -1,12 +1,21 @@
-// function fun(name, callback){
-//     console.log(`Name is : ${name}`);
-//     callback();
 
+
+// function bankBalance(){
+//     let balance =0;
+
+//    return function updateBalance(rs){
+//         balance = balance + rs
+//         console.log(balance);
+//     }
 // }
 
-// function cb(){
-//     console.log("hello callback");
-// }
+// let addBalance = bankBalance();
+// addBalance(30);
+// addBalance(200000);
 
-// fun("vikas", cb)
+// console.log(demo);
+// let demo = "data"
+
+
+
 
