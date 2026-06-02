@@ -2,7 +2,7 @@
 
 function Navbar() {
   return (
-    <div>
+    <div className="navbar">
         <p>TARGET AUDIENCE</p>
         <p>DIGITAL BANKING PLATFORM</p>
     </div>
