@@ -111,7 +111,7 @@ let user = {
     name: "Rahul"
 };
 console.log(user.age);
-// ​outPut ->  undefine
+// ​outPut ->  undefined
 
 // 15. What will be the output?
 let sum = 0;
@@ -157,7 +157,7 @@ console.log(typeof true);
 
 // 9. What will be the output?
 console.log(typeof undefined);
-// ​outPut -> "undefine"
+// ​outPut -> "undefined"
 
 // 10. What will be the output?
 console.log(typeof null);
@@ -262,7 +262,7 @@ let emp = {
     name:"John"
 };
 console.log(emp.salary);
-// ​outPut ->  Undefine
+// ​outPut ->  Undefined
 
 // 29. What will be the output?
 let obj = {
@@ -519,7 +519,7 @@ console.log(largest);
 let arr = [45, 78, 12, 99, 34];
 let smallest = Infinity;
 for(let i=0; i<arr.length; i++){
-    smallest = Math.max(smallest, arr[i])
+    smallest = Math.min(smallest, arr[i])
 }
 console.log(smallest);
 
@@ -542,9 +542,9 @@ console.log(count);
 // Print all values.
  const student = {
     name:"jayant",
-    age = 34,
-    course = "PhD",
-    city = "Pune"
+    age :34,
+    course :"PhD",
+    city : "Pune"
  }
 
 // console.log(student.name, student.age,student.course, student.city);
@@ -630,18 +630,18 @@ for (let i = 0; i < marks.length; i++) {
         passCount++
     }
     else {
-        failCount++;
+        FailCount++;
     }
 }
 console.log(passCount);
 // Count Failed Students (<35)
-console.log(failCount);
+console.log(FailCount);
 
 // Find Highest Marks
 let Higest = 0;
 let lowest = 100;
 
-for (let i = 0; i <= marks.length; i++) {
+for (let i = 0; i < marks.length; i++) {
     Higest = Math.max(Higest, marks[i]);
     lowest = Math.min(lowest, marks[i])
 }
@@ -675,9 +675,10 @@ console.log(totalSal);
 let HighPaidEmp = "";
 let LowestPaidEmp = "";
 let Highsal = 0;
-for (let i = 0; i <= employees.length; i++) {
+for (let i = 0; i <employees.length; i++) {
 
     if (Highsal < employees[i].salary) {
+        Highsal = employees[i].salary
         HighPaidEmp = employees[i].name
     }
 }
@@ -687,7 +688,8 @@ let LowestPaidEmp = "";
 let Lowsal = Infinity;
 for (let i = 0; i <= employees.length; i++) {
 
-    if (Highsal > employees[i].salary) {
+    if (Lowsal > employees[i].salary) {
+        Lowsal = employees[i].salary
         LowestPaidEmp = employees[i].name
     }
 }
