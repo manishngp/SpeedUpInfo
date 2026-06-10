@@ -7,8 +7,10 @@ function Cards({products, addtocart}) {
      {products.map((item, i)=>(
         <div  key={i}>
              <h1>{item.name}</h1>
+             <span>{item.rating}</span>
+             <span>{item.price}</span>
         <h2>{item.category}</h2>
-        <button onClick={()=> addtocart(item.id)}>add to cart</button>
+       {item.inStock ?  <button onClick={()=> addtocart(item.id)}>add to cart</button> : <p>Out of stock</p>}
         </div>
        
     )
