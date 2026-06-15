@@ -4,7 +4,7 @@ function App() {
   return (
     <>
     <pre>
-      thos 
+      thanos
     </pre>
     
     </>
