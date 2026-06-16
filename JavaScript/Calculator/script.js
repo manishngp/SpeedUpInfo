@@ -50,10 +50,17 @@ const zero = () => {
     inp_field.value = inp_field.value + '0'
 }
 
+const dot = () => {
+    let inp_field = document.getElementById("inp");
+    inp_field.value = inp_field.value + '.'
+}
+
 
 const result = () => {
     let res = document.getElementById("inp").value;
-    console.log(typeof (res));
+    let final_ans = eval(res);
+    console.log( final_ans);
+    op.value = final_ans;
 }
 
 const backspace = () => {
@@ -64,3 +71,27 @@ const backspace = () => {
     inp_field.value = joined;
     console.log(joined);
 }
+
+const mod = () => {
+    let inp_field = document.getElementById("inp");
+    inp_field.value = inp_field.value + '%'
+}
+
+const div = () => {
+    let inp_field = document.getElementById("inp");
+    inp_field.value = inp_field.value + '/'
+}
+const mul = () => {
+    let inp_field = document.getElementById("inp");
+    inp_field.value = inp_field.value + '*'
+}
+const sub = () => {
+    let inp_field = document.getElementById("inp");
+    inp_field.value = inp_field.value + '-'
+}
+const add = () => {
+    let inp_field = document.getElementById("inp");
+    inp_field.value = inp_field.value + '+'
+}
+
+
