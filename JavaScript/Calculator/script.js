@@ -56,6 +56,7 @@ const dot = () => {
 }
 
 
+
 const result = () => {
     let res = document.getElementById("inp").value;
     let final_ans = eval(res);
