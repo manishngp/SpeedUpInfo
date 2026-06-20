@@ -21,3 +21,15 @@ function App() {
 }
 
 export default App
+
+
+
+
+// | Syntax                                | Used?   | When                                               |
+// | ------------------------------------- | ------- | -------------------------------------------------- |
+// | `onClick={clik}`                      | ✅⭐⭐⭐⭐⭐  | Most common when only the event is needed          |
+// | `onClick={(e) => clik(e)}`            | ✅⭐⭐⭐⭐⭐  | Very common when adding logic or passing arguments |
+// | `onClick={function(e){ clik(e) }}`    | ✅       | Works, but less common than arrow functions        |
+// | `onClick={() => clik("Manish")}`      | ✅⭐⭐⭐⭐⭐  | Standard for passing custom arguments              |
+// | `onClick={clik.bind(null, "Manish")}` | ⚠️ Rare | Mostly seen in older React codebases               |
+// | `onClick={clik()}`                    | ❌       | Incorrect for event handlers                       |
