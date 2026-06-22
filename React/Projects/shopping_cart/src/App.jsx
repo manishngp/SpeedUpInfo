@@ -201,8 +201,8 @@ function App() {
   }
 
   const totalamt = cart.reduce((acc, curr)=>{
-    return acc+= (curr.price * curr.qty)
-  },0)
+    return acc + (curr.price * curr.qty);
+  }, 0)
 
   return (
     <>
