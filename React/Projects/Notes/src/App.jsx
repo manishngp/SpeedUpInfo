@@ -7,43 +7,82 @@ function App() {
   const [discription, setDiscription] = useState("");
   const [notes, setNotes] = useState([]);
 
-  function handleSubmit(e){
+
+  const [editing, SetEditing] = useState(false);
+ 
+  const [eid, setEid] = useState();
+  const [etitle, seteTitle] = useState("");
+  const [ediscription, seteDiscription] = useState("");
+
+
+  function handleSubmit(e) {
     e.preventDefault();
 
-    setNotes(prev => [...prev, {title, discription}])
+    setNotes(prev => [...prev, { title, discription }])
     setTitle("");
     setDiscription("");
 
   }
 
-  function deleteN(index){
-     const newNotes = [...notes];
+  function deleteN(index) {
+    const newNotes = [...notes];
     newNotes.splice(index, 1)
     console.log(newNotes);
     setNotes(newNotes)
 
   }
 
+  function editN(index) {
+    SetEditing(true);
+    const edi = notes.find((elem) => notes.indexOf(elem) === index)
+    console.log(edi);
+   
+    seteTitle(edi.title)
+    seteDiscription(edi.discription)
+    setEid(index);
+  }
+
+  function update() {
+
+    const edited = {title:etitle, discription:ediscription};
+    const editedData = [...notes]
+    editedData.splice(eid, 1, edited)
+    setNotes(editedData);
+    console.log(editedData , "this is edited data");
+    SetEditing(false)
+
+
+  }
+
   return (
     <>
       <div>
-        <form  style={{display:"flex" , flexDirection:"column", margin:"10px", gap:"20px"}} onSubmit={handleSubmit}>
-          <input type="text" placeholder="Enter Title..." value={title} onChange={(e)=>setTitle(e.target.value)} />
-          <textarea name="" placeholder="Enter Discription" value={discription}  onChange={(e)=>setDiscription(e.target.value)}></textarea>
+        <form style={{ display: "flex", flexDirection: "column", margin: "10px", gap: "20px" }} onSubmit={handleSubmit}>
+          <input type="text" placeholder="Enter Title..." value={title} onChange={(e) => setTitle(e.target.value)} />
+          <textarea name="" placeholder="Enter Discription" value={discription} onChange={(e) => setDiscription(e.target.value)}></textarea>
           <button >Add To Notes</button>
         </form>
       </div>
       <div>
         {
-          notes.map((ele, idx)=>(
+          notes.map((ele, idx) => (
             <div key={idx}>
               <h1>{ele.title}</h1>
               <h4>{ele.discription}</h4>
-              <button onClick={()=>deleteN(idx)}>Delete Note</button>
+              <button onClick={() => editN(idx)}>Edit</button>
+              <button onClick={() => deleteN(idx)}>Delete Note</button>
             </div>
           ))
         }
       </div>
+
+      {
+        editing && <div >
+          <input value={etitle} onChange={(e)=>seteTitle(e.target.value)} type="text" name="" id="" />
+          <textarea value={ediscription} onChange={(e)=>seteDiscription(e.target.value)}  name="" id=""></textarea>
+          <button onClick={() => update()}>update</button>
+        </div>
+      }
 
     </>
   )
