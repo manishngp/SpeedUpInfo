@@ -19,3 +19,10 @@
 
 
 
+
+let a = 30;
+let b = 60;
+
+const arr = [];
+arr.push({a,b})
+console.log(arr);
