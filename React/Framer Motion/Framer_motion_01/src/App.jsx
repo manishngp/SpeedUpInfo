@@ -1,4 +1,4 @@
-import { circOut, motion } from 'motion/react'
+import {  motion } from 'motion/react'
 import './App.css'
 
 function App() {
