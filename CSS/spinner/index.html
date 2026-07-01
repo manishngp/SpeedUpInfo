@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #4a4949;
+        }
+        .spinner{
+            height: 150px;
+            width: 100px;
+            border: 8px solid rgb(180, 180, 180);
+            border-radius: 5px;
+            border-top: 8px solid black;
+            
+            margin-top: 200px;
+            cursor: pointer;
+            transition: all 2s linear ;
+            display: inline-block;
+            background-color: transparent;
+            animation-name: moving  ;
+            animation-duration: 5s;
+            animation-timing-function:linear;
+            animation-iteration-count: infinite;
+            
+        }
+        .spinner1{
+            height: 150px;
+            width: 100px;
+            border: 8px solid rgb(180, 180, 180);
+            border-radius: 5px;
+            border-top: 8px solid black;
+            
+            margin-top: 200px;
+            cursor: pointer;
+            transition: all 2s linear ;
+            display: inline-block;
+            background-color: transparent;
+            animation-name: moving1  ;
+            animation-duration: 5s;
+            animation-timing-function:linear;
+            animation-iteration-count: infinite;
+            
+        }
+
+        /* .spinner:hover{
+            /* transform: rotate(30deg);
+            transform: scale(95%); */
+            /* transform: translateX(100px) rotate(45deg) scale(1.5);
+           
+        } */ 
+
+        @keyframes moving{
+             /* 30% {
+                transform:  rotate(30deg);
+            }   */
+            
+                from{
+                     transform: rotate(0deg) translateY(-200px) ;
+                }
+                to{
+                     transform: rotate(360deg)  translateY(-200px) ;
+                }
+               
+                       
+        }
+
+           @keyframes moving1{
+             /* 30% {
+                transform:  rotate(30deg);
+            }   */
+            
+                from{
+                     transform: rotate(0deg) translateY(-200px) ;
+                }
+                to{
+                     transform: rotate(360deg)  translateY(-200px) ;
+                }
+               
+                       
+        }
+    </style>
+</head>
+<body>
+    <div class="spinner" style="margin-left: 500px;"></div>
+      <div class="spinner1" ></div>
+     <!-- <div class="spinner" ></div> -->
+     <!-- <div class="spinner" ></div> --> 
+    
+</body>
+</html>
