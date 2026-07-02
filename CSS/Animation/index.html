@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        button{
+            transition: all, 1s;
+            /* animation: anim 4s ease-in  ; */
+            /* animation-iteration-count: infinite; */
+            /* animation-direction:alternate ; */
+        }
+        button:hover{
+         
+                transform: translateX(100px) translateX(0px)  rotate(360deg) 
+           
+           
+        }
+
+        @keyframes anim {
+/* 
+            from{
+              transform: translateX(0px) rotate(0deg);
+            }
+            to{
+                transform: translateX(200px) rotate(360deg);
+            } */
+
+            0%{
+                 transform: translateX(0px) rotate(-20deg);
+            }
+            20%{
+                 transform: rotate(0deg)
+            }
+            50%{
+                 transform: translateX(200px) rotate(0deg);
+            }
+            100%{
+                 transform: translateX(0px) rotate(360deg);
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <button>click</button>
+
+    
+</body>
+</html>
