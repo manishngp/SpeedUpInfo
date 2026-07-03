@@ -20,6 +20,7 @@ function App() {
 }
 
 export default App
+
 // ✅ useRef for timer ID -- persists without re-render
 // function App() {
 //   const [time, setTime] = useState(0);
@@ -43,4 +44,25 @@ export default App
 //     </div>
 //   );
 // }
+// export default App
+
+
+
+// function App() {
+//   const [count, setCount] = useState(0);
+//   const prevCountRef = useRef(0);
+
+//   useEffect(() => {
+//     prevCountRef.current = count;  // update after render
+//   });
+
+//   return (
+//     <div>
+//       <p>Current: {count}</p>
+//       <p>Previous: {prevCountRef.current}</p>
+//       <button onClick={() => setCount(prev => prev + 1)}>+</button>
+//     </div>
+//   );
+// }
+
 // export default App
