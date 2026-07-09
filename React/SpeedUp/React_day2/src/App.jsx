@@ -8,9 +8,11 @@ function App() {
 
 
   return (
-    <>
-    <Home/>
-    </>
+    <h1>
+      Home page will ne tender here
+    </h1>
+    
+    
   )
 }
 
