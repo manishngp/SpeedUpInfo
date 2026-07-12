@@ -1,19 +1,27 @@
-import { useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 
 
 function App() {
 
   const [title, setTitle] = useState("");
   const [discription, setDiscription] = useState("");
-  const [notes, setNotes] = useState([]);
+  const [notes, setNotes] = useState(() => {
+     const localStoredNotes = JSON.parse(localStorage.getItem("localNotes"))
+     if(localStoredNotes) return localStoredNotes;
+     return [];
+  });
 
 
   const [editing, SetEditing] = useState(false);
- 
+  const [search, setSearch]=useState("")
   const [eid, setEid] = useState();
   const [etitle, seteTitle] = useState("");
   const [ediscription, seteDiscription] = useState("");
 
+
+  useEffect(()=>{
+    localStorage.setItem("localNotes", JSON.stringify(notes));
+  },[notes])
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -36,7 +44,7 @@ function App() {
     SetEditing(true);
     const edi = notes.find((elem) => notes.indexOf(elem) === index)
     console.log(edi);
-   
+
     seteTitle(edi.title)
     seteDiscription(edi.discription)
     setEid(index);
@@ -44,15 +52,23 @@ function App() {
 
   function update() {
 
-    const edited = {title:etitle, discription:ediscription};
+    const edited = { title: etitle, discription: ediscription };
     const editedData = [...notes]
     editedData.splice(eid, 1, edited)
     setNotes(editedData);
-    console.log(editedData , "this is edited data");
+    console.log(editedData, "this is edited data");
     SetEditing(false)
 
 
   }
+
+  const filtered_onSearch= useMemo(()=>{
+     return [...notes].filter((ele)=>ele.title.toLowerCase().includes(search.toLowerCase())
+     || 
+     ele.discription.toLowerCase().includes(search.toLowerCase())
+    )
+  
+  },[search, notes])
 
   return (
     <>
@@ -64,8 +80,11 @@ function App() {
         </form>
       </div>
       <div>
+        <div>
+          <input type="text" placeholder="search notes ..." value={search} onChange={(e)=>setSearch(e.target.value)} />
+        </div>
         {
-          notes.map((ele, idx) => (
+          filtered_onSearch.map((ele, idx) => (
             <div key={idx}>
               <h1>{ele.title}</h1>
               <h4>{ele.discription}</h4>
@@ -78,8 +97,8 @@ function App() {
 
       {
         editing && <div >
-          <input value={etitle} onChange={(e)=>seteTitle(e.target.value)} type="text" name="" id="" />
-          <textarea value={ediscription} onChange={(e)=>seteDiscription(e.target.value)}  name="" id=""></textarea>
+          <input value={etitle} onChange={(e) => seteTitle(e.target.value)} type="text" name="" id="" />
+          <textarea value={ediscription} onChange={(e) => seteDiscription(e.target.value)} name="" id=""></textarea>
           <button onClick={() => update()}>update</button>
         </div>
       }
