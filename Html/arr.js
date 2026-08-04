@@ -3,35 +3,9 @@
 // // // arr.unshift(0);
 // // // console.log(arr);
 
-// // var user = "nitin";
-
-// // user.split("").reverse().join("");
 
 
-// // let i=0;
-// // let j = user.length
-// // let flag = true;
-// // while(i<j){
-// //     if(user[i]===user[j]){
-// //         i++;
-// //         j--;
-// //     }
-// //     else{
-// //         flag = false
-// //       break
 
-// //     }
-
-
-// // }
-
-// // if(flag){
-// //     console.log("It is a pelendrome");
-// // }
-// // else{
-// //     console.log("It is not a pelendrome");
-
-// // }
 
 
 
@@ -46,3 +20,30 @@
 //         }
 //     }
 // }
+var user = "nitin";
+
+
+
+let i=0;
+let j = user.length-1
+let flag = true;
+while(i<j){
+    if(user[i]===user[j]){
+        i++;
+        j--;
+    }
+    else{
+        flag = false;
+      break;
+
+    }
+
+
+}
+console.log(flag);
+if(flag){
+    console.log("It is a pelendrome");
+}else{
+    console.log("It is not a pelendrome");
+
+}
