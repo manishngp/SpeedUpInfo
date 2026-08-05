@@ -90,15 +90,17 @@
 // }
 // console.log(obj);
 
-const ver = process.version
-const platform = process.platform
-const dir= process.cwd()
+// const ver = process.version
+// const platform = process.platform
+// const dir= process.cwd()
 
-const obj = {
-    version : ver,
-    platform : platform,
-    directory : dir,
-    argument : process.argv.length
-}
+// const obj = {
+//     version : ver,
+//     platform : platform,
+//     directory : dir,
+//     argument : process.argv.length
+// }
 
-console.log(obj);
+// console.log(obj);
+process.exit(1)
+console.log(1);
